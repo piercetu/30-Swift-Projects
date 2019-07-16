@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA68C95222DC48F000811513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68C95122DC48F000811513 /* AppDelegate.swift */; };
-		DA68C95422DC48F000811513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68C95322DC48F000811513 /* ViewController.swift */; };
 		DA68C95722DC48F000811513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA68C95522DC48F000811513 /* Main.storyboard */; };
 		DA68C95922DC48F200811513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA68C95822DC48F200811513 /* Assets.xcassets */; };
 		DA68C95C22DC48F200811513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA68C95A22DC48F200811513 /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		DA68C94E22DC48F000811513 /* GoodAsOldPhones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodAsOldPhones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA68C95122DC48F000811513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA68C95322DC48F000811513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA68C95622DC48F000811513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA68C95822DC48F200811513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA68C95B22DC48F200811513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				DA68C95122DC48F000811513 /* AppDelegate.swift */,
-				DA68C95322DC48F000811513 /* ViewController.swift */,
 				DA68C95522DC48F000811513 /* Main.storyboard */,
 				DA68C95822DC48F200811513 /* Assets.xcassets */,
 				DA68C95A22DC48F200811513 /* LaunchScreen.storyboard */,
@@ -147,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA68C95422DC48F000811513 /* ViewController.swift in Sources */,
 				DA68C96422DC4AEC00811513 /* ProductsTableViewController.swift in Sources */,
 				DA68C96622DC4B4A00811513 /* ProductsViewController.swift in Sources */,
 				DA68C95222DC48F000811513 /* AppDelegate.swift in Sources */,

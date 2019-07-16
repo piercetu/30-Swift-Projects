@@ -1,5 +1,5 @@
 //
-//  Product.swift
+//  Products.swift
 //  GoodAsOldPhones
 //
 //  Created by Pierce Tu on 7/14/19.

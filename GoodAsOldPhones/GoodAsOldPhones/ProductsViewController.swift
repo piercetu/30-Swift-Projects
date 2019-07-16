@@ -11,11 +11,23 @@ import UIKit
 
 class ProductsViewController: UIViewController {
     
-    var Product: Product?
+    var product: Product?
+    
+    @IBOutlet weak var productLabel: UILabel!
+    @IBOutlet weak var productImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        productLabel.text = product?.name
         
+        if let imageName = product?.fullScreenImageName {
+            productImage.image = UIImage(named: imageName)
+        }
     }
+    
+    @IBAction func addToCart(_ sender: Any) {
+        print("Added to cart successfully!")
+    }
+    
 }
