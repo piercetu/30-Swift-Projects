@@ -13,8 +13,8 @@ class ProductsViewController: UIViewController {
     
     var product: Product?
     
-    @IBOutlet weak var productLabel: UILabel!
-    @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet var productLabel: UILabel!
+    @IBOutlet var productImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

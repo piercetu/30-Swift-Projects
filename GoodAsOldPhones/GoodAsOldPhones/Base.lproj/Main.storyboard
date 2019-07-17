@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-IY-XOf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-IY-XOf">
                                 <rect key="frame" x="140" y="200" width="135" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -45,19 +45,19 @@
                         <viewLayoutGuide key="safeArea" id="e6z-dr-Zuv"/>
                     </view>
                     <connections>
-                        <outlet property="productImage" destination="WXm-OG-S8i" id="1rR-MK-C7F"/>
-                        <outlet property="productLabel" destination="9tA-IY-XOf" id="Ifc-fh-Elo"/>
+                        <outlet property="productImage" destination="WXm-OG-S8i" id="iUc-CB-qto"/>
+                        <outlet property="productLabel" destination="9tA-IY-XOf" id="p1U-EP-kMw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtn-G9-sBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1786.9565217391305" y="308.70535714285711"/>
         </scene>
-        <!--Item-->
+        <!--Food-->
         <scene sceneID="StI-Ea-dwo">
             <objects>
                 <navigationController id="o1w-9c-YNs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lex-av-LFO"/>
+                    <tabBarItem key="tabBarItem" title="Food" id="lex-av-LFO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h1N-jV-u3V">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="228" y="310"/>
         </scene>
-        <!--Item 1-->
+        <!--About Us-->
         <scene sceneID="myR-9n-7Bu">
             <objects>
                 <viewController id="hZd-de-iWd" customClass="ContactsViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +114,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fbR-Ys-MjT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="i4o-N4-mE6"/>
+                    <tabBarItem key="tabBarItem" title="About Us" id="i4o-N4-mE6"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="ContactsScrollView" destination="aIO-NJ-tRN" id="drC-dM-XfJ"/>
