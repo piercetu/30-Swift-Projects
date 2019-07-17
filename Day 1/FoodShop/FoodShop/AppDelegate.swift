@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  GoodAsOldPhones
+//  FoodShop
 //
-//  Created by Pierce Tu on 7/14/19.
+//  Created by Pierce Tu on 7/16/19.
 //  Copyright © 2019 Pierce. All rights reserved.
 //
 

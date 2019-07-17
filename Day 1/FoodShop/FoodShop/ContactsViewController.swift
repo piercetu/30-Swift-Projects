@@ -31,6 +31,6 @@ class ContactsViewController: UIViewController {
         }
         
         ContactsScrollView.contentSize = CGSize(width: self.view.frame.width, height: 1000)
-    
+        
     }
 }
