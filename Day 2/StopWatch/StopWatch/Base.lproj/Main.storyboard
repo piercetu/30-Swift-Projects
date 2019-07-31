@@ -44,6 +44,9 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Lap"/>
+                                <connections>
+                                    <action selector="lapResetButton:" destination="Sf4-zq-iuA" eventType="touchUpInside" id="0gC-HD-wiJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afF-V4-ta9" userLabel="Start/Pause">
                                 <rect key="frame" x="216" y="319" width="105" height="30"/>

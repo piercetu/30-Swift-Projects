@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         changeButton(lapResetButton, title: "Lap", titleColor: UIColor.black)
         
-        if !isActive {
+        if(!isActive) {
             unowned let weakSelf = self
             
             mainStopWatch.timer = Timer.scheduledTimer(timeInterval: 0.035, target: weakSelf, selector: Selector.updateMainTimer, userInfo: nil, repeats: true)
@@ -44,6 +44,24 @@ class ViewController: UIViewController, UITableViewDelegate {
             isActive = false
             changeButton(startPauseButton, title: "Start", titleColor: UIColor.green)
             changeButton(lapResetButton, title: "Reset", titleColor: UIColor.black)
+        }
+    }
+    
+    @IBAction func lapResetButton(_ sender: AnyObject) {
+        if(!isActive) {
+            resetMainTimer()
+            resetLapTimer()
+            changeButton(lapResetButton, title: "Lap", titleColor: UIColor.lightGray)
+            lapResetButton.isEnabled = false
+        } else {
+            if let timerLabelText = timerLabel.text {
+                laps.append(timerLabelText)
+            }
+            lapsTableView.reloadData()
+            resetLapTimer()
+            unowned let weakSelf = self
+            secondStopWatch.timer = Timer.scheduledTimer(timeInterval: 0.035, target: weakSelf, selector: Selector.updateSecondTimer, userInfo: nil, repeats: true)
+            RunLoop.current.add(secondStopWatch.timer, forMode: RunLoop.Mode.common)
         }
     }
     
