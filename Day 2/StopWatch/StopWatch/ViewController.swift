@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var startPauseButton: UIButton!
     @IBOutlet weak var lapsTableView: UITableView!
     
+    
     @IBAction func startPauseButton(_ sender: AnyObject) {
         lapResetButton.isEnabled = true
         
@@ -65,6 +66,19 @@ class ViewController: UIViewController, UITableViewDelegate {
         }
     }
     
+    // UI Settings
+    override var shouldAutorotate : Bool {
+        return false
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -82,19 +96,6 @@ class ViewController: UIViewController, UITableViewDelegate {
         lapsTableView.delegate = self
         lapsTableView.dataSource = self
         
-    }
-    
-    // No AutoRotate
-    override var shouldAutorotate : Bool {
-        return false
-    }
-
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
-    }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.portrait
     }
     
     fileprivate func changeButton(_ button: UIButton, title: String, titleColor: UIColor) {
@@ -143,23 +144,22 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
 }
 
-
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return laps.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier: String = "lapCell"
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-
+        
         if let labelNum = cell.viewWithTag(11) as? UILabel {
             labelNum.text = "Lap \(laps.count - (indexPath as NSIndexPath).row)"
         }
         if let labelTimer = cell.viewWithTag(12) as? UILabel {
             labelTimer.text = laps[laps.count - (indexPath as NSIndexPath).row - 1]
         }
-
+        
         return cell
     }
 }
