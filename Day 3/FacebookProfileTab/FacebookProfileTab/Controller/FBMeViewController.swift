@@ -14,7 +14,7 @@ class FBMeViewController: FBMeBaseViewController {
     
     fileprivate var user: FBMeUser {
         get {
-            return FBMeUser(name: "Pierce Tu", education: "San Jose State University")
+            return FBMeUser(name: "Pierce Tu", education: "SJSU")
         }
     }
     
@@ -102,5 +102,42 @@ extension FBMeViewController: UITableViewDataSource {
         
     }
 }
+
+extension FBMeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let modelForRow = rowModel(at: indexPath)
+        
+        guard let title = modelForRow[TableKeys.Title] else {
+            return 0.0
+        }
+        
+        if title == user.name {
+            return 64.0
+        } else {
+            return 44.0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let modelForRow = rowModel(at: indexPath)
+        
+        guard let title = modelForRow[TableKeys.Title] else {
+            return
+        }
+        
+        if title == TableKeys.seeMore || title == TableKeys.addFavorites {
+            cell.textLabel?.textColor = Specs.color.tint
+            cell.accessoryType = .none
+        } else if title == TableKeys.logout {
+            cell.textLabel?.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
+            cell.textLabel?.textColor = Specs.color.red
+            cell.textLabel?.textAlignment = .center
+            cell.accessoryType = .none
+        } else {
+            cell.accessoryType = .disclosureIndicator
+        }
+    }
+}
+
 
 
