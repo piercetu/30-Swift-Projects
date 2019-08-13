@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA9FD70322F2C2520058C46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD70222F2C2520058C46E /* AppDelegate.swift */; };
+		DA9FD70522F2C2520058C46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD70422F2C2520058C46E /* ViewController.swift */; };
+		DA9FD70A22F2C2570058C46E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9FD70922F2C2570058C46E /* Assets.xcassets */; };
+		DA9FD71522F2C3A40058C46E /* FBMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71422F2C3A40058C46E /* FBMeViewController.swift */; };
+		DA9FD71B22F2C41B0058C46E /* FBMeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71A22F2C41B0058C46E /* FBMeBaseViewController.swift */; };
+		DA9FD71D22F2C4640058C46E /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71C22F2C4640058C46E /* Specs.swift */; };
+		DA9FD71F22F2C47B0058C46E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71E22F2C47B0058C46E /* UIColor+Extension.swift */; };
+		DA9FD72122F2C4850058C46E /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD72022F2C4850058C46E /* TableKeys.swift */; };
+		DA9FD72322F2C49C0058C46E /* FBMeBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD72222F2C49C0058C46E /* FBMeBaseCell.swift */; };
+		DA9FD72522F2D8AB0058C46E /* FBMeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD72422F2D8AB0058C46E /* FBMeUser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA9FD6FF22F2C2520058C46E /* FacebookProfileTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookProfileTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9FD70222F2C2520058C46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA9FD70422F2C2520058C46E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA9FD70922F2C2570058C46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA9FD70E22F2C2570058C46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9FD71422F2C3A40058C46E /* FBMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeViewController.swift; sourceTree = "<group>"; };
+		DA9FD71A22F2C41B0058C46E /* FBMeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeBaseViewController.swift; sourceTree = "<group>"; };
+		DA9FD71C22F2C4640058C46E /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
+		DA9FD71E22F2C47B0058C46E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DA9FD72022F2C4850058C46E /* TableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
+		DA9FD72222F2C49C0058C46E /* FBMeBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeBaseCell.swift; sourceTree = "<group>"; };
+		DA9FD72422F2D8AB0058C46E /* FBMeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeUser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9FD6FC22F2C2520058C46E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA9FD6F622F2C2520058C46E = {
+			isa = PBXGroup;
+			children = (
+				DA9FD70122F2C2520058C46E /* FacebookProfileTab */,
+				DA9FD70022F2C2520058C46E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9FD70022F2C2520058C46E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9FD6FF22F2C2520058C46E /* FacebookProfileTab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9FD70122F2C2520058C46E /* FacebookProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+				DA9FD70222F2C2520058C46E /* AppDelegate.swift */,
+				DA9FD71922F2C3F40058C46E /* Helper */,
+				DA9FD71822F2C3EF0058C46E /* Controller */,
+				DA9FD71722F2C3EB0058C46E /* View */,
+				DA9FD71622F2C3E60058C46E /* Model */,
+				DA9FD70422F2C2520058C46E /* ViewController.swift */,
+				DA9FD70922F2C2570058C46E /* Assets.xcassets */,
+				DA9FD70E22F2C2570058C46E /* Info.plist */,
+			);
+			path = FacebookProfileTab;
+			sourceTree = "<group>";
+		};
+		DA9FD71622F2C3E60058C46E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA9FD72422F2D8AB0058C46E /* FBMeUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA9FD71722F2C3EB0058C46E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA9FD72222F2C49C0058C46E /* FBMeBaseCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA9FD71822F2C3EF0058C46E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA9FD71A22F2C41B0058C46E /* FBMeBaseViewController.swift */,
+				DA9FD71422F2C3A40058C46E /* FBMeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA9FD71922F2C3F40058C46E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DA9FD71C22F2C4640058C46E /* Specs.swift */,
+				DA9FD71E22F2C47B0058C46E /* UIColor+Extension.swift */,
+				DA9FD72022F2C4850058C46E /* TableKeys.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9FD6FE22F2C2520058C46E /* FacebookProfileTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9FD71122F2C2570058C46E /* Build configuration list for PBXNativeTarget "FacebookProfileTab" */;
+			buildPhases = (
+				DA9FD6FB22F2C2520058C46E /* Sources */,
+				DA9FD6FC22F2C2520058C46E /* Frameworks */,
+				DA9FD6FD22F2C2520058C46E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacebookProfileTab;
+			productName = FacebookProfileTab;
+			productReference = DA9FD6FF22F2C2520058C46E /* FacebookProfileTab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9FD6F722F2C2520058C46E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Pierce;
+				TargetAttributes = {
+					DA9FD6FE22F2C2520058C46E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DA9FD6FA22F2C2520058C46E /* Build configuration list for PBXProject "FacebookProfileTab" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA9FD6F622F2C2520058C46E;
+			productRefGroup = DA9FD70022F2C2520058C46E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9FD6FE22F2C2520058C46E /* FacebookProfileTab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9FD6FD22F2C2520058C46E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9FD70A22F2C2570058C46E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9FD6FB22F2C2520058C46E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9FD72122F2C4850058C46E /* TableKeys.swift in Sources */,
+				DA9FD71522F2C3A40058C46E /* FBMeViewController.swift in Sources */,
+				DA9FD72322F2C49C0058C46E /* FBMeBaseCell.swift in Sources */,
+				DA9FD70522F2C2520058C46E /* ViewController.swift in Sources */,
+				DA9FD70322F2C2520058C46E /* AppDelegate.swift in Sources */,
+				DA9FD71F22F2C47B0058C46E /* UIColor+Extension.swift in Sources */,
+				DA9FD71D22F2C4640058C46E /* Specs.swift in Sources */,
+				DA9FD71B22F2C41B0058C46E /* FBMeBaseViewController.swift in Sources */,
+				DA9FD72522F2D8AB0058C46E /* FBMeUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA9FD70F22F2C2570058C46E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA9FD71022F2C2570058C46E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA9FD71222F2C2570058C46E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P4RL2V69U;
+				INFOPLIST_FILE = FacebookProfileTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = piercetu.FacebookProfileTab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA9FD71322F2C2570058C46E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2P4RL2V69U;
+				INFOPLIST_FILE = FacebookProfileTab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = piercetu.FacebookProfileTab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9FD6FA22F2C2520058C46E /* Build configuration list for PBXProject "FacebookProfileTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9FD70F22F2C2570058C46E /* Debug */,
+				DA9FD71022F2C2570058C46E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9FD71122F2C2570058C46E /* Build configuration list for PBXNativeTarget "FacebookProfileTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9FD71222F2C2570058C46E /* Debug */,
+				DA9FD71322F2C2570058C46E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9FD6F722F2C2520058C46E /* Project object */;
+}
