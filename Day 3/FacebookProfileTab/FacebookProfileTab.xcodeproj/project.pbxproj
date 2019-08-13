@@ -12,7 +12,6 @@
 		DA9FD70522F2C2520058C46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD70422F2C2520058C46E /* ViewController.swift */; };
 		DA9FD70A22F2C2570058C46E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9FD70922F2C2570058C46E /* Assets.xcassets */; };
 		DA9FD71522F2C3A40058C46E /* FBMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71422F2C3A40058C46E /* FBMeViewController.swift */; };
-		DA9FD71B22F2C41B0058C46E /* FBMeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71A22F2C41B0058C46E /* FBMeBaseViewController.swift */; };
 		DA9FD71D22F2C4640058C46E /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71C22F2C4640058C46E /* Specs.swift */; };
 		DA9FD71F22F2C47B0058C46E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD71E22F2C47B0058C46E /* UIColor+Extension.swift */; };
 		DA9FD72122F2C4850058C46E /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9FD72022F2C4850058C46E /* TableKeys.swift */; };
@@ -28,7 +27,6 @@
 		DA9FD70922F2C2570058C46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9FD70E22F2C2570058C46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9FD71422F2C3A40058C46E /* FBMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeViewController.swift; sourceTree = "<group>"; };
-		DA9FD71A22F2C41B0058C46E /* FBMeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeBaseViewController.swift; sourceTree = "<group>"; };
 		DA9FD71C22F2C4640058C46E /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
 		DA9FD71E22F2C47B0058C46E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DA9FD72022F2C4850058C46E /* TableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		DA9FD71822F2C3EF0058C46E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA9FD71A22F2C41B0058C46E /* FBMeBaseViewController.swift */,
 				DA9FD71422F2C3A40058C46E /* FBMeViewController.swift */,
 			);
 			path = Controller;
@@ -191,7 +188,6 @@
 				DA9FD70322F2C2520058C46E /* AppDelegate.swift in Sources */,
 				DA9FD71F22F2C47B0058C46E /* UIColor+Extension.swift in Sources */,
 				DA9FD71D22F2C4640058C46E /* Specs.swift in Sources */,
-				DA9FD71B22F2C41B0058C46E /* FBMeBaseViewController.swift in Sources */,
 				DA9FD72522F2D8AB0058C46E /* FBMeUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

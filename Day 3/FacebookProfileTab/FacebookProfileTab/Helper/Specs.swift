@@ -50,7 +50,7 @@ public struct Specs {
         public let gaming = "fb_gaming"
         public let jobs = "fb_jobs"
         public let local = "fb_local"
-        public let seeMore = "fb_seeMore"
+//        public let seeMore = "fb_seeMore"
         public let helpAndSupport = "fb_helpAndSupport"
         public let settingsAndPrivacy = "fb_settingsAndPrivacy"
         public let logOut = "fb_logOut"

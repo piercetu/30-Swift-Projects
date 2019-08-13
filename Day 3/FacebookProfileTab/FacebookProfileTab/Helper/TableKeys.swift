@@ -38,9 +38,8 @@ public struct TableKeys {
                     [TableKeys.ImageName: Specs.imageName.nearbyFriends, TableKeys.Title: "Nearby Friends"],
                     [TableKeys.ImageName: Specs.imageName.gaming, TableKeys.Title: "Gaming"],
                     [TableKeys.ImageName: Specs.imageName.jobs, TableKeys.Title: "Jobs"],
-                    [TableKeys.ImageName: Specs.imageName.saved, TableKeys.Title: "Saved"],
                     [TableKeys.ImageName: Specs.imageName.local, TableKeys.Title: "Local"],
-                    [TableKeys.ImageName: Specs.imageName.seeMore, TableKeys.Title: "See More"]
+//                    [TableKeys.ImageName: Specs.imageName.seeMore, TableKeys.Title: "See More"]
                 ]
             ],
             [

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FBMeViewController: FBMeBaseViewController {
+class FBMeViewController: UIViewController {
     
     typealias RowModel = [String: String]
     
@@ -125,17 +125,19 @@ extension FBMeViewController: UITableViewDelegate {
             return
         }
         
-        if title == TableKeys.seeMore || title == TableKeys.addFavorites {
-            cell.textLabel?.textColor = Specs.color.tint
-            cell.accessoryType = .none
-        } else if title == TableKeys.logout {
-            cell.textLabel?.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
-            cell.textLabel?.textColor = Specs.color.red
-            cell.textLabel?.textAlignment = .center
-            cell.accessoryType = .none
-        } else {
+//        if title == TableKeys.seeMore || title == TableKeys.addFavorites {
+//            cell.textLabel?.textColor = Specs.color.tint
+//            cell.accessoryType = .none
+//    }
+//        if title == TableKeys.logout {
+//            cell.textLabel?.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
+//            cell.textLabel?.textColor = Specs.color.red
+//            cell.textLabel?.textAlignment = .center
+//            cell.accessoryType = .none
+//        }
+//        else {
             cell.accessoryType = .disclosureIndicator
-        }
+//        }
     }
 }
 
