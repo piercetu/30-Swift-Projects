@@ -14,7 +14,7 @@ enum Section: Int {
 }
 
 class ItemListDataProvider: NSObject {
-    var itemManager: ToDoManager?
+    var itemManager: ToDoItemManager?
 }
 
 extension ItemListDataProvider: UITableViewDataSource {
