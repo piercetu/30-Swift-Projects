@@ -19,15 +19,15 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="86" id="tdS-I3-Lsc" customClass="ItemCell" customModule="ToDoTDD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="86"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" rowHeight="105" id="tdS-I3-Lsc" customClass="ItemCell" customModule="ToDoTDD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tdS-I3-Lsc" id="jV0-W6-paB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjw-3C-QgU">
-                                                    <rect key="frame" x="140" y="30" width="120" height="20.5"/>
+                                                    <rect key="frame" x="140" y="37" width="120" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="rjP-UO-PO4"/>
                                                     </constraints>
@@ -36,7 +36,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kg-9V-COM">
-                                                    <rect key="frame" x="20" y="30" width="100" height="20"/>
+                                                    <rect key="frame" x="20" y="30" width="100" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="fga-vF-IuH"/>
                                                     </constraints>
@@ -45,7 +45,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke1-VS-Kjv">
-                                                    <rect key="frame" x="280" y="30" width="114" height="20.5"/>
+                                                    <rect key="frame" x="280" y="37" width="114" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -55,6 +55,7 @@
                                                 <constraint firstItem="5kg-9V-COM" firstAttribute="centerY" secondItem="kjw-3C-QgU" secondAttribute="centerY" id="DfJ-lJ-JfL"/>
                                                 <constraint firstItem="Ke1-VS-Kjv" firstAttribute="baseline" secondItem="kjw-3C-QgU" secondAttribute="firstBaseline" id="JvX-7V-xAR"/>
                                                 <constraint firstAttribute="trailing" secondItem="Ke1-VS-Kjv" secondAttribute="trailing" constant="20" id="bsM-Uq-cDT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5kg-9V-COM" secondAttribute="bottom" constant="30" id="cUX-Yz-WjG"/>
                                                 <constraint firstItem="5kg-9V-COM" firstAttribute="top" secondItem="jV0-W6-paB" secondAttribute="top" constant="30" id="cZK-Nh-s46"/>
                                                 <constraint firstItem="Ke1-VS-Kjv" firstAttribute="leading" secondItem="kjw-3C-QgU" secondAttribute="trailing" constant="20" id="fFZ-if-lfy"/>
                                                 <constraint firstItem="5kg-9V-COM" firstAttribute="leading" secondItem="jV0-W6-paB" secondAttribute="leading" constant="20" id="iuZ-mC-Hpj"/>
