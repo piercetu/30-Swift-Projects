@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wg0-ws-pod">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wg0-ws-pod">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +11,7 @@
         <!--Products View Controller-->
         <scene sceneID="Vw5-Rj-SBr">
             <objects>
-                <viewController id="Dbm-ko-2Kx" customClass="ProductsViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dbm-ko-2Kx" customClass="ProductsViewController" customModule="FoodShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQj-oO-R4Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,14 +71,13 @@
         <!--About Us-->
         <scene sceneID="eUw-xM-pGj">
             <objects>
-                <viewController id="cgY-eI-ntI" customClass="ContactsViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cgY-eI-ntI" customClass="ContactsViewController" customModule="FoodShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Y2-gF-cdn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="af8-tP-c42" customClass="ContactsScrollView" customModule="GoodAsOldPhones" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="af8-tP-c42" customClass="ContactsScrollView" customModule="FoodShop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnH-qM-RNU">
                                         <rect key="frame" x="153" y="156" width="109" height="44"/>
@@ -101,7 +98,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37C-hA-1g2" customClass="end" customModule="GoodAsOldPhones" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37C-hA-1g2" customClass="end" customModule="FoodShop" customModuleProvider="target">
                                         <rect key="frame" x="186" y="824" width="42" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -112,6 +109,12 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OR5-PI-9nM" firstAttribute="top" secondItem="af8-tP-c42" secondAttribute="top" constant="44" id="1Da-nA-91c"/>
+                            <constraint firstItem="af8-tP-c42" firstAttribute="trailing" secondItem="OR5-PI-9nM" secondAttribute="trailing" id="FuM-V6-FaB"/>
+                            <constraint firstItem="af8-tP-c42" firstAttribute="bottom" secondItem="OR5-PI-9nM" secondAttribute="bottom" constant="83" id="SaH-gF-n2r"/>
+                            <constraint firstItem="af8-tP-c42" firstAttribute="leading" secondItem="OR5-PI-9nM" secondAttribute="leading" id="suN-D8-cje"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OR5-PI-9nM"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" id="KA4-jR-RNw"/>
@@ -147,7 +150,7 @@
         <!--Products Table View Controller-->
         <scene sceneID="5nf-DH-XLL">
             <objects>
-                <tableViewController id="vVd-ow-lGx" customClass="ProductsTableViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vVd-ow-lGx" customClass="ProductsTableViewController" customModule="FoodShop" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="94" sectionHeaderHeight="18" sectionFooterHeight="18" id="P5g-Rj-ktd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +160,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="414" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWH-En-dpk" id="15j-N1-9PJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="376" height="93.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="94"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -178,6 +181,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="food" width="16" height="16"/>
+        <image name="food" width="324" height="155"/>
     </resources>
 </document>
