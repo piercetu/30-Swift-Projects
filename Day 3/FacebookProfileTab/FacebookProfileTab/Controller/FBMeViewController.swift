@@ -118,27 +118,27 @@ extension FBMeViewController: UITableViewDelegate {
         }
     }
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        let modelForRow = rowModel(at: indexPath)
-//        
-//        guard let title = modelForRow[TableKeys.Title] else {
-//            return
-//        }
-//        
-////        if title == TableKeys.seeMore || title == TableKeys.addFavorites {
-////            cell.textLabel?.textColor = Specs.color.tint
-////            cell.accessoryType = .none
-////    }
-////        if title == TableKeys.logout {
-////            cell.textLabel?.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
-////            cell.textLabel?.textColor = Specs.color.red
-////            cell.textLabel?.textAlignment = .center
-////            cell.accessoryType = .none
-////        }
-////        else {
-//            cell.accessoryType = .disclosureIndicator
-////        }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let modelForRow = rowModel(at: indexPath)
+        
+        guard let title = modelForRow[TableKeys.Title] else {
+            return
+        }
+        
+//        if title == TableKeys.seeMore || title == TableKeys.addFavorites {
+//            cell.textLabel?.textColor = Specs.color.tint
+//            cell.accessoryType = .none
 //    }
+//        if title == TableKeys.logout {
+//            cell.textLabel?.centerXAnchor.constraint(equalTo: cell.centerXAnchor).isActive = true
+//            cell.textLabel?.textColor = Specs.color.red
+//            cell.textLabel?.textAlignment = .center
+//            cell.accessoryType = .none
+//        }
+//        else {
+            cell.accessoryType = .disclosureIndicator
+//        }
+    }
 }
 
 

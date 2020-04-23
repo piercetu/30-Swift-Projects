@@ -26,7 +26,6 @@ enum PokemonType {
     case dragon
     case dark
     case steel
-    case fairy
 }
 
 class Pokemon: NSObject {
