@@ -30,22 +30,14 @@ class InterestCollectionViewCell: UICollectionViewCell {
         cellImage.image = interest.featuredImage
     }
     
-    func flipToFront() {
-//        UIView.transition(from: backSide, to: frontSide, duration: 0.5, options: [.transitionFlipFromRight, .showHideTransitionViews], completion: nil)
-        frontSide.isHidden = false
-        backSide.isHidden = true
-    }
-    
-    func flipToBack() {
-//        UIView.transition(from: frontSide, to: backSide, duration: 0.5, options: [.transitionFlipFromLeft, .showHideTransitionViews], completion: nil)
-        frontSide.isHidden = true
-        backSide.isHidden = false
-    }
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         
         self.layer.cornerRadius = 8
         self.clipsToBounds = true
+        
+        cellLabel.text = interest.title
+        cellDescription.text = interest.description
+        cellImage.image = interest.featuredImage
     }
 }

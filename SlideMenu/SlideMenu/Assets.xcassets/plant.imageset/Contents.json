@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "1600x900-5209613-plant-succulent-hone-decor-home-decor-home-interior-potted-plant-cactu-houseplant-cacti-pot-decor-concrete-thorn-green-concrete-pot-free-pictures.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

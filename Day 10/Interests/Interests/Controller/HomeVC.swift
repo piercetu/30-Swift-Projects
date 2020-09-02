@@ -28,6 +28,7 @@ class HomeVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
 }
 
 // MARK: - CollectionViewDataSource
@@ -39,7 +40,7 @@ extension HomeVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.cellIdentifier, for: indexPath) as! InterestCollectionViewCell
-        cell.interest = interests[(indexPath as NSIndexPath).item]
+        cell.interest = interests[indexPath.item]
         
         cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cellTapped(_:))))
 
@@ -49,37 +50,17 @@ extension HomeVC: UICollectionViewDataSource {
     @objc func cellTapped(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: self.collectionView)
         guard let indexPath = self.collectionView.indexPathForItem(at: location) else { return }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.cellIdentifier, for: indexPath) as! InterestCollectionViewCell
-//        let card = interests[indexPath.row]
 
         if isFlipped {
             // Back side
             isFlipped = false
-            cell.flipToBack()
             UICollectionViewCell.transition(with: collectionView.cellForItem(at: indexPath)!, duration: 0.5, options: [.transitionFlipFromLeft, .showHideTransitionViews], animations: nil, completion: nil)
         } else {
             // Front side
             isFlipped = true
-            cell.flipToFront()
             UICollectionViewCell.transition(with: collectionView.cellForItem(at: indexPath)!, duration: 0.5, options: [.transitionFlipFromRight, .showHideTransitionViews], animations: nil, completion: nil)
         }
     }
-    
-//    func collectionview(_ collectionview: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath) as! InterestCollectionViewCell
-//
-//        let card = interests[indexPath.row]
-//
-//        if card.isFlipped {
-//            // Back side
-//            card.isFlipped = false
-//            cell.flipToBack()
-//        } else {
-//            // Front side
-//            card.isFlipped = true
-//            cell.flipToFront()
-//        }
-//    }
 }
 
 // MARK: - UIScrollViewDelegate
